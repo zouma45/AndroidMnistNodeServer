@@ -51,7 +51,7 @@ public class SendImage extends AsyncTask<String, Void, String> {
         Log.i("shit", "ccccccccccccccccccccccccccccccccccccccccccccc");
         try {
 
-            jsonObject = jParser.makeHttpRequest("http://192.168.1.2:8080/tt", "POST", params); // if you want to test it just put your computer's IPV4
+            jsonObject = jParser.makeHttpRequest("http://server-ip-adress:port/mnist", "POST", params);
             feedback = jsonObject.toString();
         } catch (Exception e) {
 
